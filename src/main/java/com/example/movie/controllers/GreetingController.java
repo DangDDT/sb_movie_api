@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.movie.models.Greeting;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
+@Tag(name = "Greeting", description = "Test APIs")
 @RestController
 @RequestMapping("/api/v1")
 public class GreetingController {
